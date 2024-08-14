@@ -69,11 +69,11 @@ public class signup extends JFrame {
 		ImageIcon iii=new ImageIcon(newim);
 		img.setIcon(iii);
 		
-		JLabel lblDelizh = new JLabel("FOODIEweb - Sign Up");
-		lblDelizh.setForeground(new Color(255, 145, 0));
-		lblDelizh.setFont(new Font("Agency FB", Font.BOLD, 30));
-		lblDelizh.setBounds(230, 155, 350, 50);
-		img.add(lblDelizh);
+		JLabel signup = new JLabel("FOODIEweb - Sign Up");
+		signup.setForeground(new Color(255, 145, 0));
+		signup.setFont(new Font("Agency FB", Font.BOLD, 30));
+		signup.setBounds(230, 155, 350, 50);
+		img.add(signup);
 
 		JLabel lblNewLabel = new JLabel("Name");
 		lblNewLabel.setFont(new Font("Agency FB", Font.PLAIN, 25));

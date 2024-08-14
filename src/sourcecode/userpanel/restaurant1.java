@@ -158,11 +158,11 @@ public class restaurant1 extends JFrame {
 	      });
 		mb.add(contact);
 		
-		JLabel lblDelizh = new JLabel("FOODIEweb");
-		lblDelizh.setForeground(new Color(255, 140, 0));
-		lblDelizh.setFont(new Font("Agency FB", Font.BOLD, 35));
-		lblDelizh.setBounds(290, 585, 200, 50);
-		img.add(lblDelizh);
+		JLabel foodie = new JLabel("FOODIEweb");
+		foodie.setForeground(new Color(255, 140, 0));
+		foodie.setFont(new Font("Agency FB", Font.BOLD, 35));
+		foodie.setBounds(290, 585, 200, 50);
+		img.add(foodie);
 		
 		JLabel plt=new JLabel();
 		plt.setBounds(178, 550, 350, 150);

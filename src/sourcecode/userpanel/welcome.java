@@ -66,11 +66,11 @@ public class welcome extends JFrame {
 		ImageIcon ii2 = new ImageIcon(newim2);
 		img2.setIcon(ii2);
 
-		JLabel lblDelizh = new JLabel("FOODIEweb");
-		lblDelizh.setForeground(new Color(255, 140, 0));
-		lblDelizh.setFont(new Font("Agency FB", Font.BOLD, 50));
-		lblDelizh.setBounds(264, 145, 350, 50);
-		img.add(lblDelizh);
+		JLabel foodie = new JLabel("FOODIEweb");
+		foodie.setForeground(new Color(255, 140, 0));
+		foodie.setFont(new Font("Agency FB", Font.BOLD, 50));
+		foodie.setBounds(264, 145, 350, 50);
+		img.add(foodie);
 
 		JLabel lblGoGrabYour = new JLabel("Grab Your Taste!");
 		lblGoGrabYour.setForeground(new Color(255, 140, 0));
