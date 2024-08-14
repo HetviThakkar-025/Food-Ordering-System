@@ -60,7 +60,7 @@ public class resetpass extends JFrame {
 	 */
 	public resetpass() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 563, 304);
+		setSize(563, 304);
 		setTitle("account manager");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -223,5 +223,9 @@ public class resetpass extends JFrame {
 		checkBox.setOpaque(false);
 		checkBox.setForeground(Color.white);
 		img.add(checkBox);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }

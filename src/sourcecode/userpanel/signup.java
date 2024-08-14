@@ -54,7 +54,7 @@ public class signup extends JFrame {
 	 */
 	public signup() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 700);
+		setSize(700, 700);
 		setTitle("Sign up");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -238,5 +238,9 @@ public class signup extends JFrame {
 		cp.setFont(new Font("Myriad Pro", Font.ITALIC, 20));
 		cp.setBounds(205, 472, 480, 70);
 		img.add(cp);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }

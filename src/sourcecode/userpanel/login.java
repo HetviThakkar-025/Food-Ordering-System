@@ -51,7 +51,7 @@ public class login extends JFrame {
 	 */
 	public login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 700);
+		setSize(700, 700);
 		setTitle("log in");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -201,6 +201,10 @@ public class login extends JFrame {
 		button.setFont(new Font("Agency FB", Font.PLAIN, 20));
 		button.setBounds(245, 420, 92, 34);
 		img.add(button);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 
 }

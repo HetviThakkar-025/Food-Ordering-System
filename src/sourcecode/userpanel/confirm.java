@@ -72,7 +72,7 @@ public class confirm extends JFrame {
 	 */
 	public confirm() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 700);
+		setSize(700, 700);
 		setTitle("book food");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -227,6 +227,10 @@ public class confirm extends JFrame {
 	         }
 	      });
 		img.add(button);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 
 }

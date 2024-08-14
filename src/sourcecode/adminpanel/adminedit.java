@@ -1,5 +1,6 @@
 package sourcecode.adminpanel;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.util.*;
 import java.awt.EventQueue;
 import java.sql.*;
@@ -88,7 +89,7 @@ public class adminedit extends JFrame {
 		String h=hi,l=lo;
 		//System.out.print(lo+hi);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 704, 394);
+		setSize(704, 394);
 		setTitle("EditPanel-admin");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -601,5 +602,9 @@ public class adminedit extends JFrame {
 		btnLogout.setFont(new Font("Agency FB", Font.PLAIN, 20));
 		btnLogout.setBounds(592, 10, 85, 34);
 		contentPane.add(btnLogout);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }

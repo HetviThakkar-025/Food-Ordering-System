@@ -53,7 +53,7 @@ public class deleteacc extends JFrame {
 	 */
 	public deleteacc() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 284, 304);
+		setSize(284, 304);
 		setTitle("account manager");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -178,5 +178,9 @@ public class deleteacc extends JFrame {
 		password.setEchoChar('*');
 		password.setBounds(10, 89, 248, 34);
 		img.add(password);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }

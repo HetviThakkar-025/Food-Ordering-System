@@ -53,7 +53,7 @@ public class coupon extends JFrame {
 	 */
 	public coupon() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 256, 304);
+		setSize(256, 304);
 		setTitle("coupons");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -109,6 +109,10 @@ public class coupon extends JFrame {
 	         }
 	      });
 		img.add(button);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 
 }

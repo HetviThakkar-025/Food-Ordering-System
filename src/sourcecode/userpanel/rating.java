@@ -55,7 +55,7 @@ public class rating extends JFrame {
 	public rating() {
 		res=restaurant1.rest;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 345, 304);
+		setSize(345, 304);
 		setTitle("rate restaurant");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -156,6 +156,8 @@ public class rating extends JFrame {
 	      });
 		img.add(btnSubmit);
 		
-		
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }

@@ -47,7 +47,7 @@ public class adminlogin extends JFrame {
 	 */
 	public adminlogin() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 281, 304);
+		setSize(281, 304);
 		setTitle("AdminPanel");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -157,6 +157,10 @@ public class adminlogin extends JFrame {
 		button_1.setFont(new Font("Agency FB", Font.PLAIN, 20));
 		button_1.setBounds(72, 229, 92, 34);
 		contentPane.add(button_1);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 
 }

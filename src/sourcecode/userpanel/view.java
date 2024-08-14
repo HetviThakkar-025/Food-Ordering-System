@@ -53,7 +53,7 @@ public class view extends JFrame {
 	 */
 	public view() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 422, 304);
+		setSize(422, 304);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -109,6 +109,10 @@ public class view extends JFrame {
 	      });
 		img.add(button);
 		img.add(button);
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 
 }

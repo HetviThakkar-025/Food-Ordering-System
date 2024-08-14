@@ -33,7 +33,7 @@ public class restaurant1 extends JFrame {
 
 	public restaurant1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 700);
+		setSize(700, 700);
 		setTitle("restaurants");
 		contentPane = new JPanel();
 		contentPane.addContainerListener(new ContainerAdapter() {
@@ -310,5 +310,9 @@ public class restaurant1 extends JFrame {
 		btnCoupon.setBounds(130, 338, 92, 30);
 		img.add(btnCoupon);
 		btnCoupon.setFont(new Font("Agency FB", Font.PLAIN, 20));
+
+		setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
 	}
 }
