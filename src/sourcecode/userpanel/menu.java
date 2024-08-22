@@ -17,18 +17,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
-import javax.swing.SpinnerModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.event.ChangeListener;
-
 import net.proteanit.sql.DbUtils;
-
 import javax.swing.event.ChangeEvent;
 import java.sql.*;
 import java.awt.event.ActionListener;
@@ -169,7 +165,7 @@ public class menu extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int error = -1;
 				try {
-					ArrayList<Integer> pr = new ArrayList<Integer>();
+					MyLinkedList<Integer> pr = new MyLinkedList<Integer>();
 					if (food.getText().equals("")) {
 						error = 1;
 						throw new Exception();
@@ -333,7 +329,7 @@ public class menu extends JFrame {
 		img.add(btnPlaceOrder);
 
 		setResizable(false);
-        setLocationRelativeTo(null);
-        setVisible(true);
+		setLocationRelativeTo(null);
+		setVisible(true);
 	}
 }

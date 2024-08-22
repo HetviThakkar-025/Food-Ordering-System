@@ -155,8 +155,8 @@ public class welcome extends JFrame {
 		img.add(lblGoodFood);
 
 		setResizable(false);
-        setLocationRelativeTo(null);
-        setVisible(true);
+		setLocationRelativeTo(null);
+		setVisible(true);
 	}
 
 }

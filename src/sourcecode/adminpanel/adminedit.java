@@ -7,13 +7,10 @@ import java.sql.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import net.proteanit.sql.DbUtils;
-
 import javax.swing.JTabbedPane;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -47,8 +44,8 @@ public class adminedit extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ArrayList<String> r=new ArrayList<String>();
-					ArrayList<Double> a=new ArrayList<Double>();
+					MyArrayList<String> r=new MyArrayList<String>();
+					MyArrayList<Double> a=new MyArrayList<Double>();
 					int i=0;
 					double temp;
 					String tem;

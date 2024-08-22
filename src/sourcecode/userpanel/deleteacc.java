@@ -113,8 +113,8 @@ public class deleteacc extends JFrame {
 				int error=-1;
 				try
 				{
-					ArrayList<String> pass=new ArrayList<String>();
-					ArrayList<String> user=new ArrayList<String>();
+					MyArrayList<String> pass=new MyArrayList<String>();
+					MyArrayList<String> user=new MyArrayList<String>();
 					if(password.getText().equals(""))
 					{
 						error=2;
